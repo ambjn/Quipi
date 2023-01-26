@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
+import 'package:quipi/database/db.dart';
+import 'package:quipi/models/note_model.dart';
+import 'package:quipi/screens/edit_note_screen.dart';
+import 'package:quipi/screens/notes_detail_screen.dart';
+import 'package:quipi/widgets/note_card.dart';
 
 class NotesScreen extends StatefulWidget {
   const NotesScreen({super.key});
