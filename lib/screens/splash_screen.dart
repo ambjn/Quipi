@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:quipi/screens/notes_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   SplashScreen({super.key});
@@ -59,7 +61,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 width: 180.0,
                 height: 50.0,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const NotesScreen()),
                     style: ButtonStyle(
                         backgroundColor:
                             MaterialStateProperty.all(Colors.amber.shade400),
