@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:quipi/screens/splash_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Quipi',
       theme: ThemeData(
         fontFamily: 'Montserrat',
@@ -26,7 +28,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
       initialRoute: '/',
-      getPages: [],
+      getPages: [
+        GetPage(name: '/', page: () => SplashScreen()),
+      ],
     );
   }
 }
